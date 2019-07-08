@@ -23,10 +23,11 @@ class Controller_Main extends Controller
 			echo 0;
 		} else {
 			foreach ($row as $var) {
+				$fullEmail = $var['email'];
 				$name = $var['name'];
 				$sname = $var['sname'];
 				$id = $var['user_id'];
-				echo "$name $sname [id: $id]\n";
+				echo "$fullEmail $name $sname [id: $id]\n";
 			}
 		}
 	}
